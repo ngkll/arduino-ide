@@ -256,7 +256,13 @@ export class BoardsServiceProvider
       oldState,
     });
     this.reconcileAvailableBoards().then(() => {
-      this.tryReconnect();
+      const { uploadInProgress } = event;
+
+      if (!uploadInProgress) {
+        this.attemptAutoSelect(event.newState);
+      } else {
+        this.tryReconnectWithHardwareId();
+      }
     });
   }
 
@@ -361,29 +367,43 @@ export class BoardsServiceProvider
     }
   }
 
-  protected tryReconnect(): boolean {
+  private connectPortWithHardwareId(board: Board) {
+    if (
+      this.latestValidBoardsConfig &&
+      Board.hardwareIdEquals(this.latestValidBoardsConfig.selectedBoard, board)
+    ) {
+      const { name, fqbn } = this.latestValidBoardsConfig.selectedBoard;
+      this.boardsConfig = {
+        selectedBoard: {
+          name: board.name === Unknown || !board.name ? name : board.name,
+          fqbn: board.fqbn || fqbn,
+          port: board.port,
+        },
+        selectedPort: board.port,
+      };
+      return true;
+    }
+  }
+
+  private tryReconnectWithHardwareId() {
     if (this.latestValidBoardsConfig && !this.canUploadTo(this.boardsConfig)) {
-      // ** Reconnect to a board unplugged, and plugged back in
       for (const board of this.availableBoards.filter(
         ({ state }) => state !== AvailableBoard.State.incomplete
       )) {
-        if (
-          Board.hardwareIdEquals(
-            this.latestValidBoardsConfig.selectedBoard,
-            board
-          )
-        ) {
-          const { name, fqbn } = this.latestValidBoardsConfig.selectedBoard;
-          this.boardsConfig = {
-            selectedBoard: {
-              name: board.name === Unknown || !board.name ? name : board.name,
-              fqbn: board.fqbn || fqbn,
-              port: board.port,
-            },
-            selectedPort: board.port,
-          };
-          return true;
-        }
+        const connected = this.connectPortWithHardwareId(board);
+        if (connected) return true;
+      }
+    }
+    return false;
+  }
+
+  protected tryReconnect(): boolean {
+    if (this.latestValidBoardsConfig && !this.canUploadTo(this.boardsConfig)) {
+      for (const board of this.availableBoards.filter(
+        ({ state }) => state !== AvailableBoard.State.incomplete
+      )) {
+        const connected = this.connectPortWithHardwareId(board);
+        if (connected) return true;
 
         if (
           this.latestValidBoardsConfig.selectedBoard.fqbn === board.fqbn &&
@@ -394,15 +414,12 @@ export class BoardsServiceProvider
           return true;
         }
       }
-      // **
 
-      // ** Reconnect to a board whose port changed due to an upload
       if (!this.boardConfigToAutoSelect) return false;
 
       this.boardsConfig = this.boardConfigToAutoSelect;
       this.boardConfigToAutoSelect = undefined;
       return true;
-      // **
     }
     return false;
   }
