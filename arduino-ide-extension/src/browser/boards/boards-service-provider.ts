@@ -256,12 +256,7 @@ export class BoardsServiceProvider
       oldState,
     });
     this.reconcileAvailableBoards().then(() => {
-      const { uploadInProgress } = event;
-      // avoid attempting "auto-selection" while an
-      // upload is in progress
-      if (!uploadInProgress) {
-        this.attemptAutoSelect(event.newState);
-      }
+      this.tryReconnect();
     });
   }
 
@@ -368,7 +363,7 @@ export class BoardsServiceProvider
 
   protected tryReconnect(): boolean {
     if (this.latestValidBoardsConfig && !this.canUploadTo(this.boardsConfig)) {
-      // ** Reconnect to a board unplugged from, and plugged back into the same port
+      // ** Reconnect to a board unplugged, and plugged back in
       for (const board of this.availableBoards.filter(
         ({ state }) => state !== AvailableBoard.State.incomplete
       )) {
