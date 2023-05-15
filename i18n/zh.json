@@ -230,10 +230,6 @@
       "previousError": "上一个错误",
       "revealError": "显示错误"
     },
-    "electron": {
-      "couldNotSave": "无法保存项目。请将未保存的工作复制到你喜爱的文本编辑器中，然后重新启动 IDE。",
-      "unsavedChanges": "将不会保存任何未保存的更改。"
-    },
     "examples": {
       "builtInExamples": "内置示例",
       "couldNotInitializeExamples": "无法初始化内置示例。",
@@ -281,6 +277,10 @@
       "skipVersionButton": "跳过这次版本更新",
       "updateAvailable": "IDE 可更新。",
       "versionDownloaded": "Arduino IDE {0} 已经下载。"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "添加 .ZIP 库...",
@@ -415,7 +415,7 @@
     "serial": {
       "autoscroll": "自动滚屏",
       "carriageReturn": "回车",
-      "connecting": "Connecting to '{0}' on '{1}'...",
+      "connecting": "在 '{1}' 上连接至 '{0}' 中……",
       "message": "消息（按回车将消息发送到“{1}”上的“{0}”）",
       "newLine": "换行",
       "newLineCarriageReturn": "换行 和 回车 两者都是",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "项目存档",
       "cantOpen": "“{0}” 文件夹已存在。无法打开项目。",
-      "close": "是否确实要关闭项目？",
       "compile": "正在编译项目…",
       "configureAndUpload": "配置并上传",
       "createdArchive": "已创建存档 ‘{0}’。",
@@ -475,12 +474,13 @@
       "surveyMessage": "请回答这份很短的调查来帮助我们改进。我们重视我们的社区，也希望能够更好地了解我们的支持者。"
     },
     "theme": {
-      "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
-      "dark": "Dark",
-      "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
-      "light": "Light",
-      "user": "{0} (user)"
+      "currentThemeNotFound": "找不到当前选中的主题：{0}。Arduino IDE 已选择一个与缺失者兼容的内置主题。",
+      "dark": "暗黑",
+      "deprecated": "{0} （已弃用）",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
+      "light": "明亮",
+      "user": "{0}（用户）"
     },
     "title": {
       "cloud": "云"

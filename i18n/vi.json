@@ -230,10 +230,6 @@
       "previousError": "Previous Error",
       "revealError": "Reveal Error"
     },
-    "electron": {
-      "couldNotSave": "Không thể lưu sketch. Hãy sao chép tất cả những phần việc chưa được lưu lại vào trình chỉnh sửa văn bản yêu thích của bạn, và khởi động lại IDE.",
-      "unsavedChanges": "Tất cả các thay đổi chưa được lưu sẽ không được lưu lại."
-    },
     "examples": {
       "builtInExamples": "Ví dụ được tích hợp sẵn",
       "couldNotInitializeExamples": "Không thể khởi tạo các ví dụ tích hợp sẵn.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Bỏ qua",
       "updateAvailable": "Cập nhật khả dụng",
       "versionDownloaded": "Arduino IDE {0} đã được tải về."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "Thêm thư viện đuôi .ZIP...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Nén sketch",
       "cantOpen": "Một thư mục tên \"{0}\" đã tồn tại. Không thể mở sketch.",
-      "close": "Bạn có chắc muốn đóng sketch này không?",
       "compile": "Compiling sketch...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "Đã tạo tệp nén '{0]'.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

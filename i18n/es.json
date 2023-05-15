@@ -230,10 +230,6 @@
       "previousError": "Error Anterior",
       "revealError": "Revelar Error"
     },
-    "electron": {
-      "couldNotSave": "No se ha podido guardar el sketch. Por favor, copia tu trabajo no guardado en tu editor de texto favorito y reinicia el IDE.",
-      "unsavedChanges": "Los cambios no guardados no serán guardados."
-    },
     "examples": {
       "builtInExamples": "Ejemplos Construidos",
       "couldNotInitializeExamples": "No se han podido inicializar los ejemplos integrados.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Omitir versión",
       "updateAvailable": "Actualización disponible",
       "versionDownloaded": "Arduino IDE {0} se ha descargado."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "Añadir biblioteca .ZIP...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Archivo de programa",
       "cantOpen": "Ya existe una carpeta con el nombre \"{0}\". No se puede abrir.",
-      "close": "¿Estás seguro de que quieres cerrar el sketch?",
       "compile": "Compilando proyecto...",
       "configureAndUpload": "Configura y Subir",
       "createdArchive": "Archivo '{0}' creado.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

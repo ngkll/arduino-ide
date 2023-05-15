@@ -230,10 +230,6 @@
       "previousError": "خطای قبلی",
       "revealError": "فاش کردن خطا"
     },
-    "electron": {
-      "couldNotSave": "ابر طرح را ذخیره نکرد. لطفا کار ذخیره نشده خود را به ویرایشگر متن مورد علاقه خود کپی کنید، و آردوینو را دوباره راه اندازی کنید.",
-      "unsavedChanges": "هر تغییری که انجام می دهید ذخیره نمی شود."
-    },
     "examples": {
       "builtInExamples": "نمونه های داخلی",
       "couldNotInitializeExamples": "ابر نمی تواند نمونه های داخلی را مقدار دهی اولیه کند.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "نسخه بعدی",
       "updateAvailable": "به روز رسانی موجود است",
       "versionDownloaded": "آردوینو {0} دانلود شده بوده است."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "اضافه کتابخانه ی .zip شده",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "آرشیو طرح",
       "cantOpen": "پوشه ای با نام \"{0}\" از قبل وجود دارد. طرح را نمی توان باز کرد",
-      "close": "آیا شما می خواهید این طرح را ببندید؟",
       "compile": "تدوین طرح...",
       "configureAndUpload": "پیکری بندی و بارگذاری",
       "createdArchive": "آرشیو {0} ایجاد شد.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

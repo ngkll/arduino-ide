@@ -230,10 +230,6 @@
       "previousError": "Poprzedni Błąd",
       "revealError": "Pokaż Error"
     },
-    "electron": {
-      "couldNotSave": "Wszystkie niezapisane zmiany zostaną utracone.",
-      "unsavedChanges": "Wszystkie niezapisane zmiany zostaną utracone."
-    },
     "examples": {
       "builtInExamples": "Wbudowane przykłady",
       "couldNotInitializeExamples": "Nie można zainicjalizować wbudowanych przykładów.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Pomiń tą wersję.",
       "updateAvailable": "Dostępna aktualizacja.",
       "versionDownloaded": "Pobrano Arduino IDE {0}"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "Dodaj bibliotekę .ZIP...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Archiwizuj szkic",
       "cantOpen": "Folder \"{0}\" już istnieje. Nie można otworzyć szkicu.",
-      "close": "Jesteś pewien, że chcesz zamknąć szkic?",
       "compile": "Kompilowanie szkicu...",
       "configureAndUpload": "Skompiluj i wgraj",
       "createdArchive": "Stwórz archiwum '{0}'.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

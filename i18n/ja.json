@@ -230,10 +230,6 @@
       "previousError": "前のエラー",
       "revealError": "エラーを表示"
     },
-    "electron": {
-      "couldNotSave": "スケッチを保存できませんでした。保存されていない作業内容を好きなテキストエディターにコピーして、IDEを再起動してください。",
-      "unsavedChanges": "未保存の変更は保存されません。"
-    },
     "examples": {
       "builtInExamples": "付属のスケッチ例",
       "couldNotInitializeExamples": "付属のスケッチ例を初期化できませんでした。",
@@ -281,6 +277,10 @@
       "skipVersionButton": "バージョンをスキップ",
       "updateAvailable": "アップデートがあります",
       "versionDownloaded": "Arduino IDE {0}がダウンロードされました。"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": ".ZIP形式のライブラリをインストール...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "スケッチをアーカイブする",
       "cantOpen": "「{0}」というフォルダはすでに存在します。スケッチを開けません。",
-      "close": "本当にスケッチを閉じますか？",
       "compile": "スケッチをコンパイル中…",
       "configureAndUpload": "構成と書き込み",
       "createdArchive": "アーカイブ'{0}'を作成しました。",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

@@ -230,10 +230,6 @@
       "previousError": "Previous Error",
       "revealError": "Reveal Error"
     },
-    "electron": {
-      "couldNotSave": "Nem sikerült menteni a vázlatot/sketch-et. Másold át a nem mentett munkát kedvenc szövegszerkesztődbe és indítsd újra az IDE-t. ",
-      "unsavedChanges": "A nem mentett módosítások nem kerülnek mentésre. "
-    },
     "examples": {
       "builtInExamples": "Beépített példák",
       "couldNotInitializeExamples": "Nem sikerült inicializálni/előhívni a beépített példákat. ",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Skip Version",
       "updateAvailable": "Update Available",
       "versionDownloaded": "Arduino IDE {0} has been downloaded."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "ZIP könyvtár hozzáadása...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Vázlat/sketch archiválása",
       "cantOpen": "Már létezik a/az {0} nevű mappa. A vázlat/sketch nem nyitható meg. ",
-      "close": "Biztosan bezárod a vázlatot/sketch-et? ",
       "compile": "Compiling sketch...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "Archívum létrehozva: {0}. ",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

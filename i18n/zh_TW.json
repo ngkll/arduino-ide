@@ -23,7 +23,7 @@
       "inSketchbook": "(在草稿資料夾中)",
       "installNow": "必須為目前選定的 {2} 開發板安裝 {0} {1} 核心程式，你要現在安裝嗎？",
       "noBoardsFound": "未找到開發板 {0}",
-      "noFQBN": "FQBN無法用於所選擇的\"{0}\"開發版。你是否安裝了對應的核心?",
+      "noFQBN": "所選擇的 \"{0}\" 開發版並沒有對應的 FQBN。你是否有安裝對應的核心？",
       "noNativeSerialPort": "Native serial port, can't obtain info.",
       "noPortsDiscovered": "未找到埠",
       "noPortsSelected": "沒有選到 '{0}' 板的埠",
@@ -230,10 +230,6 @@
       "previousError": "上一個錯誤",
       "revealError": "顯示錯誤"
     },
-    "electron": {
-      "couldNotSave": "無法儲存草稿，請複製你未存檔的工作到你偏好的文字編輯器中並重新啟動 IDE 整合開發環境",
-      "unsavedChanges": "任何沒有儲存的修改將不會被儲存"
-    },
     "examples": {
       "builtInExamples": "內建範例",
       "couldNotInitializeExamples": "無法初始內建的範例",
@@ -281,6 +277,10 @@
       "skipVersionButton": "跳過這個版本",
       "updateAvailable": "有可用的更新。",
       "versionDownloaded": "Arduino IDE{0}下載完成。"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "加入 .zip 函式庫 ...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "儲存草稿",
       "cantOpen": "命名為\"{0}\"的資料夾已存在。無法開啟草稿。",
-      "close": "你確定要關閉 Sketch？",
       "compile": "編譯中...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "已創建文件{0}。",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

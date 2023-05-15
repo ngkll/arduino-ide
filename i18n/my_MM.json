@@ -230,10 +230,6 @@
       "previousError": "ရှေ့ကအမှား",
       "revealError": "အမှားဖော်ပြ"
     },
-    "electron": {
-      "couldNotSave": "ကုတ်ပုံကြမ်းကို မသိမ်းဆည်းနိုင်ခဲ့ပါ။ ကျေးဇူးပြု၍ သင်၏ မသိမ်းဆည်းရသေးသော ကုတ်များကို သင်နှစ်သက်ရာ စာသားတည်းဖြတ်မှုဆော့ဖ်ဝဲထဲသို့ ကူးယူပြီး IDE ကို ပြန်စတင်ပါ။",
-      "unsavedChanges": "မသိမ်းရသေးသောပြောင်းလဲမှုများကိုသိမ်းမည်မဟုတ်ပါ။"
-    },
     "examples": {
       "builtInExamples": "နဂိုပါဝင်သောဥပမာများ",
       "couldNotInitializeExamples": "နဂိုပါဝင်သောဥပမာများကို မစတင်နိုင်ခဲ့ပါ။",
@@ -281,6 +277,10 @@
       "skipVersionButton": "ဗားရှင်းကျော်မည်",
       "updateAvailable": "အပ်ဒိတ်ရပါပြီ",
       "versionDownloaded": "Arduino IDE {0} ကိုဒေါင်းလုတ်ဆွဲပြီးပါပြီ။"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "ကုတ်ကြည့်တိုက် .ZIPထည့်မည်…",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "ကုတ်ဖိုင်လ်သိမ်းမည်",
       "cantOpen": "\"{0}\" အမည်ဖြင့်ဖိုလ်ဒါရှိနှင့်ပြီးဖြစ်သည်။ ကုတ်ဖိုင်လ်ကို မဖွင့်နိုင်ပါ။",
-      "close": "ကုတ်ဖိုင်လ်ပိတ်မှာသေချာပါသလား။",
       "compile": "ကုတ်ဖိုင်လ်ကို ကုတ်ပေါင်းနေသည်…",
       "configureAndUpload": "ပြင်ဆင်၍အပ်လုတ်တင်မည်",
       "createdArchive": "ဖန်းတီးပြီးသော သိမ်းဆည်းဖိုင်လ် '{0}'။",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

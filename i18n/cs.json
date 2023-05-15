@@ -230,10 +230,6 @@
       "previousError": "Předchozí chyba",
       "revealError": "Zobrazit Chybu"
     },
-    "electron": {
-      "couldNotSave": "Nebylo možné uložit sketch. Zkopírujte prosím neuloženou práci do Vašeho oblíbeného textového editoru a restartujte IDE. ",
-      "unsavedChanges": "Jakékoli změny nebudou uloženy. "
-    },
     "examples": {
       "builtInExamples": "Vestavěné příklady.",
       "couldNotInitializeExamples": "Nebylo možné inicializovat vestavěné příklady.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "přeskočit verzi",
       "updateAvailable": "Je dostupná aktualizace",
       "versionDownloaded": "Arduino IDE {0}bylo staženo."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "Přidat .ZIP knihovnu...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Archivovat sketch",
       "cantOpen": "Složka s názvem \"{0}\" již existuje, proto nemohu otevřít sketch. ",
-      "close": "Opravdu chcete zavřít tuto sketch? ",
       "compile": "Compiling sketch...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "Vytvořen archív '{0}'.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

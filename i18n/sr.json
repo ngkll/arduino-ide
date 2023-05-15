@@ -230,10 +230,6 @@
       "previousError": "Previous Error",
       "revealError": "Reveal Error"
     },
-    "electron": {
-      "couldNotSave": "Could not save the sketch. Please copy your unsaved work into your favorite text editor, and restart the IDE.",
-      "unsavedChanges": "Ниједна несачувана промјена неће бити сачувана."
-    },
     "examples": {
       "builtInExamples": "Уграђени примјери",
       "couldNotInitializeExamples": "Није могуће иницијализовати уграђене примјере.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Прескочите ову верзију",
       "updateAvailable": "Доступна је надоградња",
       "versionDownloaded": "Arduino IDE {0} је преузет."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "Додај .ZIP библиотеку...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Архивирај рад",
       "cantOpen": "Директоријум \"{0}\" већ постоји. Није могуће отворити рад.",
-      "close": "Да ли желиш да затвориш рад?",
       "compile": "Compiling sketch...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "Направљена архива '{0}'.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

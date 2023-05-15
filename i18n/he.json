@@ -230,10 +230,6 @@
       "previousError": "שגיאה קודמת.",
       "revealError": "הראה שגיאה"
     },
-    "electron": {
-      "couldNotSave": "לא ניתן לשמור את הסקיצה. נא להעתיק את העבודה הלא שמורה לתוך עורך טקסט חיצוני, ולהפעיל מחדש את הIDE.",
-      "unsavedChanges": "כל השינויים שלא נשמרו לא ישמרו."
-    },
     "examples": {
       "builtInExamples": "דוגמאות מובנות",
       "couldNotInitializeExamples": "לא ניתן להפעיל את הדוגמאות מובנות מראש.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "דלג גרסה",
       "updateAvailable": "נמצא עדכון",
       "versionDownloaded": "Arduino IDE {0} ירד בהצלחה"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "הוספת ספריית .zip",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Archive Sketch",
       "cantOpen": "A folder named \"{0}\" already exists. Can't open sketch.",
-      "close": "בטוח.ה שתרצה.י לסגור את הסקיצה?",
       "compile": "מקמפל סקיצה...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "ארכיון ׳{0}׳ נוצר.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

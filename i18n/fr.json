@@ -230,10 +230,6 @@
       "previousError": "Erreur précédente",
       "revealError": "Reveal Error"
     },
-    "electron": {
-      "couldNotSave": "Impossible d'enregistrer le croquis. Veuillez copier votre travail non enregistré dans votre éditeur de texte favori et redémarrer l'IDE.",
-      "unsavedChanges": "Les modifications non enregistrées seront perdues."
-    },
     "examples": {
       "builtInExamples": "Exemples inclus",
       "couldNotInitializeExamples": "Impossible d'initialiser les exemples inclus.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Ignorer la version",
       "updateAvailable": "Mise à jour disponible",
       "versionDownloaded": "L'IDE Arduino {0} a été téléchargé."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "Ajouter la bibliothèque .ZIP...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Archiver le croquis",
       "cantOpen": "Un dossier nommé « {0} » existe déjà. Impossible d''ouvrir le croquis.",
-      "close": "Êtes-vous sûr de vouloir fermer ce croquis ?",
       "compile": "Compilation du programme...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "Archive créer '{0}'",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

@@ -230,10 +230,6 @@
       "previousError": "Errore Precedente",
       "revealError": "Rileva l'errore"
     },
-    "electron": {
-      "couldNotSave": "Non è stato possibile salvare lo sketch. Si consiglia di copiarlo è salvarlo su un file di testo e solo successivamente riavviare l'Arduino IDE. ",
-      "unsavedChanges": "Eventuali modifiche non salvate verranno perse."
-    },
     "examples": {
       "builtInExamples": "Esempi integrati",
       "couldNotInitializeExamples": "Impossibile inizializzare gli esempi incorporati.",
@@ -282,6 +278,10 @@
       "updateAvailable": "Aggiornamento disponibile",
       "versionDownloaded": "Arduino IDE {0} è stato scaricato correttamente."
     },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
+    },
     "library": {
       "addZip": "Aggiungi libreria da file .ZIP...",
       "arduinoLibraries": "Librerie Arduino",
@@ -294,7 +294,7 @@
       "installWithoutDependencies": "Installa senza le dipendenze",
       "installedSuccessfully": "Libreria installata correttamente {0}:{1}",
       "libraryAlreadyExists": "Libreria già presente. Vuoi sovrascriverla?",
-      "manageLibraries": "Gestisci Librerie...",
+      "manageLibraries": "Gestisci librerie...",
       "namedLibraryAlreadyExists": "La cartella con nome {0} esiste già. Vuoi sovrascriverla?",
       "needsMultipleDependencies": "La libreria <b>{0}:{1}</b> necessita altre dipendenze che attualmente non sono installate:",
       "needsOneDependency": "La libreria <b>{0}:{1}</b> necessita di dipendenze che attualmente non sono installate:",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Archivia sketch",
       "cantOpen": "Una cartella di nome \"{0}\" esiste già. Impossibile aprire lo sketch.",
-      "close": "Sei sicuro di voler chiudere lo sketch?",
       "compile": "Compilazione dello sketch in corso...",
       "configureAndUpload": "Configura e Carica",
       "createdArchive": "Creato l'archivio '{0}'.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Impossibile trovare il tema attualmente selezionato: {0}. Arduino IDE ha selezionato un tema integrato compatibile con quello mancante.",
       "dark": "Scuro",
       "deprecated": "{0} (deprecato)",
-      "hc": "Alto contrasto",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Luce",
       "user": "{0} (utente)"
     },

@@ -230,10 +230,6 @@
       "previousError": "Önceki Hata",
       "revealError": "Gösterim Hatası"
     },
-    "electron": {
-      "couldNotSave": "Eskiz kaydedilemedi. Lütfen kaydedilmeyen işinizi favori metin düzenleyicinize kopyalayın ve IDE'yi yeniden başlatın.",
-      "unsavedChanges": "Kaydedilmemiş değişiklikler kaybedilecek."
-    },
     "examples": {
       "builtInExamples": "Dahili örnekler",
       "couldNotInitializeExamples": "Dahili örnekler bulunamadı.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Sürümü Atla",
       "updateAvailable": "Güncelleme Mevcut",
       "versionDownloaded": "Arduino IDE {0} indirildi."
+    },
+    "installable": {
+      "libraryInstallFailed": "Kütüphane kurulamadı: '{0}{1}'.",
+      "platformInstallFailed": "Platform kurulamadı: '{0}{1}'."
     },
     "library": {
       "addZip": ".ZIP Kütüphanesi Ekle...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Eskizi Arşivle",
       "cantOpen": "\"{0}\" klasörü zaten mevcut. Eskiz açılamadı.",
-      "close": "Eskizi kapatmak istediğinizden emin misiniz?",
       "compile": "Eskiz derleniyor...",
       "configureAndUpload": "Ayarla ve Yükle",
       "createdArchive": "'{0}' arşivi oluşturuldu.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Mevcut seçili tema bulunamadı: {0}. Arduino IDE kayıp olanın yerine uyumlu dahili bir tane seçti.",
       "dark": "Koyu",
       "deprecated": "{0} (kaldırıldı)",
-      "hc": "Yüksek Karşıtlık",
+      "hc": "Koyu Yüksek Karşıtlık",
+      "hcLight": "Açık Yüksek Karşıtlık",
       "light": "Açık",
       "user": "{0} (kullanıcı)"
     },

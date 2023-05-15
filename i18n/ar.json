@@ -230,10 +230,6 @@
       "previousError": "الخطأ السابق",
       "revealError": "Reveal Error"
     },
-    "electron": {
-      "couldNotSave": "تعذر حفظ المشروع . الرجاء نسخ عملك الغير محفوظ الى محرر النصوص المفضل لديك و اعادة تشغيل Arduino IDE",
-      "unsavedChanges": "اي تغييرات لم تحفظ لن يتم حفظها"
-    },
     "examples": {
       "builtInExamples": "الأمثلة المدمجة",
       "couldNotInitializeExamples": "تعذرت تهيئة الامثلة المدمجة",
@@ -281,6 +277,10 @@
       "skipVersionButton": "تخطى النسخة",
       "updateAvailable": "يوجد تحديث",
       "versionDownloaded": "لقد تم تحميل {0} Arduino IDE"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "اضف مكتبة .ZIP ...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "ارشفة الشيفرة البرمجية",
       "cantOpen": "المجلد المسمى \"{0}\" موجود مسبقا. لا يمكن فتح الشيفرة البرمجية",
-      "close": "هل انت متاكد بانك تريد اغلاق المشروع ؟",
       "compile": "Compiling sketch...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "تم انشاء ارشيف '{0}'",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

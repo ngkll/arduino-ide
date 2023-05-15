@@ -5,8 +5,8 @@
       "label": "關於 {0}"
     },
     "account": {
-      "goToCloudEditor": "Go to Cloud Editor",
-      "goToIoTCloud": "Go to IoT Cloud",
+      "goToCloudEditor": "在雲端編輯器中打開",
+      "goToIoTCloud": "前往物聯網雲端",
       "goToProfile": "Go to Profile",
       "menuTitle": "Arduino Cloud"
     },
@@ -230,10 +230,6 @@
       "previousError": "上一個錯誤",
       "revealError": "顯示錯誤"
     },
-    "electron": {
-      "couldNotSave": "無法儲存草稿, 請先將尚未存檔的內容複製到慣用的文字編輯器中, 再重新啟動 IDE。",
-      "unsavedChanges": "任何尚未儲存的修改都不會儲存。"
-    },
     "examples": {
       "builtInExamples": "內建範例",
       "couldNotInitializeExamples": "無法初始內建的範例",
@@ -281,6 +277,10 @@
       "skipVersionButton": "略過這個版本",
       "updateAvailable": "有可用的更新。",
       "versionDownloaded": "Arduino IDE{0}下載完成。"
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "加入 .zip 函式庫 ...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "將草稿碼歸檔",
       "cantOpen": "\"{0}\" 資料夾已存在, 無法開啟草稿碼。",
-      "close": "確定要關閉草稿碼嗎？",
       "compile": "正在編譯草稿碼...",
       "configureAndUpload": "設定並上傳",
       "createdArchive": "已歸檔{0}。",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

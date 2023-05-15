@@ -230,10 +230,6 @@
       "previousError": "Previous Error",
       "revealError": "Reveal Error"
     },
-    "electron": {
-      "couldNotSave": "Ezin izan da programa gorde. Kopiatu gorde gabeko zure lana zure testu-editore gogokoenera eta berrabiarazi IDEa.",
-      "unsavedChanges": "Gorde gabeko aldaketak galduko dira."
-    },
     "examples": {
       "builtInExamples": "Integratutako adibideak",
       "couldNotInitializeExamples": "Ezin izan dira hasieratu integratutako adibideak.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Saltatu bertsioa",
       "updateAvailable": "Eguneratzea eskuragarri",
       "versionDownloaded": "Arduino IDE {0} deskargatu da."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": "Gehitu .ZIP liburutegia...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Artxibatu programa",
       "cantOpen": "\"{0}\" izeneko karpeta badago dagoeneko. Ezin da programa ireki.",
-      "close": "Ziur zaude programa itxi nahi duzula?",
       "compile": "Compiling sketch...",
       "configureAndUpload": "Configure and Upload",
       "createdArchive": "'{0}' artxiboa sortu da.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },

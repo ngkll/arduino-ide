@@ -230,10 +230,6 @@
       "previousError": "Vorige Fout",
       "revealError": "Onthul fout"
     },
-    "electron": {
-      "couldNotSave": "Kan de schets niet opslaan. Kopieer uw niet-opgeslagen werk naar uw favoriete teksteditor en start de IDE opnieuw. ",
-      "unsavedChanges": "Niet opgeslagen wijzigingen worden niet opgeslagen."
-    },
     "examples": {
       "builtInExamples": "Ingebouwde voorbeelden",
       "couldNotInitializeExamples": "Kan ingebouwde voorbeelden niet initialiseren.",
@@ -281,6 +277,10 @@
       "skipVersionButton": "Versie overslaan",
       "updateAvailable": "Update beschikbaar",
       "versionDownloaded": "Arduino IDE {0} is gedownload."
+    },
+    "installable": {
+      "libraryInstallFailed": "Failed to install library: '{0}{1}'.",
+      "platformInstallFailed": "Failed to install platform: '{0}{1}'."
     },
     "library": {
       "addZip": ".ZIP-bibliotheek toevoegen...",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Archiveer Schets",
       "cantOpen": "Er bestaat al een map met de naam \"{0}\". Kan schets niet openen.",
-      "close": "Weet je zeker dat je de schets wilt sluiten?",
       "compile": "Sketch compileren...",
       "configureAndUpload": "Configureer en upload",
       "createdArchive": "Archief '{0}' gemaakt.",
@@ -478,7 +477,8 @@
       "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
       "dark": "Dark",
       "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
+      "hc": "Dark High Contrast",
+      "hcLight": "Light High Contrast",
       "light": "Light",
       "user": "{0} (user)"
     },
